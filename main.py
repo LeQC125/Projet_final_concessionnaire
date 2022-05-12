@@ -10,13 +10,17 @@
 #######################################
 ###  IMPORTATIONS - Porté globale  ###
 #######################################
+import Main_interface
 from Camion import *
 from Auto import *
 from Contract_vente import *
+
 # importation module pour l'interface graphique
 import sys
-from pyqt5.QtGui import QStandardItemModel, QStandardItem
-import Main_interface
+from PyQt5 import QtWidgets
+from PyQt5.QtCore import pyqtSlot
+from Main_interface import *
+import Ajouter
 
 
 ##########################################################
@@ -26,11 +30,26 @@ import Main_interface
 #######################################
 ###### DéFINITIONS DES FONCTIONS ######
 #######################################
-
+class FenetrePrincipale(QtWidgets.QMainWindow, Main_interface.Ui_MainWindow):
+      def __init__(self, parent=None):
+            super(Main_interface, self).__init__(parent)
+            self.setupUi(self)
+            self.setWindowTitle("Concessionnaire JDM cars")
+            #cacher_label_errors(self)
 
 #################################
 ###### PROGRAMME PRINCIPAL ######
 #################################
+@pyqtSlot()
+def on_pushButtom_ajouter_clicked():
+      # initialiser la boite graphique
+      dialog = Ajouter()
+      dialog.show()
+      #Afficher la boite graphique
+      reply = dialog.exec_()
+
+
+
 
 #################################
 ######## Programme test #########

@@ -6,9 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>467</width>
-    <height>338</height>
+    <width>469</width>
+    <height>353</height>
    </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>12</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -38,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>70</y>
+      <y>50</y>
       <width>231</width>
       <height>41</height>
      </rect>
@@ -49,14 +54,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Ajouter  </string>
+     <string>Véhicule</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_modifier">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>140</y>
+      <y>100</y>
       <width>231</width>
       <height>41</height>
      </rect>
@@ -67,14 +72,14 @@
      </font>
     </property>
     <property name="text">
-     <string>Modifier </string>
+     <string>Client</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_quitter">
     <property name="geometry">
      <rect>
       <x>120</x>
-      <y>220</y>
+      <y>250</y>
       <width>231</width>
       <height>41</height>
      </rect>
@@ -88,14 +93,40 @@
      <string>Quitter</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>150</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Vendeur</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>200</y>
+      <width>231</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Contract de vente</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>467</width>
-     <height>21</height>
+     <width>469</width>
+     <height>27</height>
     </rect>
    </property>
   </widget>
