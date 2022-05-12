@@ -16,7 +16,8 @@ from Contract_vente import *
 # importation module pour l'interface graphique
 import sys
 from pyqt5.QtGui import QStandardItemModel, QStandardItem
-import Main_interface
+import
+
 
 ##########################################################
 ###  DéCLARATIONS ET INITIALISATIONS - Porté globale  ####
